@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Find Transaction"
+        android:id="@+id/findTransaction"/>
+
+    <item android:title="TransactionTypeCode"
+        android:id="@+id/transactionTypecode"/>
+
+    <item android:title="Transaction Card Errors"
+        android:id="@+id/transactionCarderror"/>
+
+    <item android:title="Transaction Type"
+        android:id="@+id/typeofTransaction"/>
+
+</menu>
