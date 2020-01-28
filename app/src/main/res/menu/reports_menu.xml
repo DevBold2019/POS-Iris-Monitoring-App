@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="HeartBeat"/>
+    <item
+        android:title="Terminals Activated"/>
+    <item
+        android:title="Audit Trails"/>
+    <item
+        android:title="Customers"/>
+
+</menu>

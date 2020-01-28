@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Device Histoy"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always"
+        android:id="@+id/deviceSearch"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:title="Whitelisted Devices"/>
+
+    <item
+        android:title="Released Devices"/>
+
+    <item
+        android:title="Decomission Devices"/>
+
+    <item
+        android:title="Repairs and Delivery"/>
+
+    <item
+        android:title="Help Desk"/>
+
+</menu>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/transactionDrawer"
-    tools:context=".TransactionsActivity">
+    tools:context=".Activities.TransactionsActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -21,6 +21,26 @@
             android:background="#f2f2f2"
             android:id="@+id/transactionToolbar">
         </androidx.appcompat.widget.Toolbar>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/transactionContainer"
+            app:layout_constraintTop_toBottomOf="@+id/transactionToolbar">
+
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

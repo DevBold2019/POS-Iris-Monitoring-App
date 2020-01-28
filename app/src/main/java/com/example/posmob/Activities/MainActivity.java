@@ -1,4 +1,4 @@
-package com.example.posmob;
+package com.example.posmob.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -10,13 +10,12 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
 
-import java.util.Objects;
+import com.example.posmob.R;
 
 public class MainActivity extends AppCompatActivity {
 
