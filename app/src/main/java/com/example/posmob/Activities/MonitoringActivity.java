@@ -1,51 +1,43 @@
-package com.example.posmob;
+package com.example.posmob.Activities;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
-import com.google.android.material.navigation.NavigationView;
+import com.example.posmob.R;
 
 import java.util.Objects;
 
 
-public class TransactionsActivity extends AppCompatActivity {
-
+public class MonitoringActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    NavigationView navigationView;
-    DrawerLayout drawerLayout;
     ActionBarDrawerToggle toogle;
+    DrawerLayout drawerLayout;
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_transactions);
+        setContentView(R.layout.activity_monitoring);
 
-        toolbar=findViewById(R.id.transactionToolbar);
+
+        drawerLayout=findViewById(R.id.monitoringDrawer);
+        toolbar=findViewById(R.id.monitoringToolbar);
+
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow_back_black_24dp);
 
-        navigationView=findViewById(R.id.transactionNavigation);
-        drawerLayout=findViewById(R.id.transactionDrawer);
-
-        toogle=new ActionBarDrawerToggle(TransactionsActivity.this,drawerLayout,toolbar,R.string.open,R.string.close);
-        drawerLayout.addDrawerListener(toogle);
+        toogle=new ActionBarDrawerToggle(MonitoringActivity.this,drawerLayout,toolbar,R.string.open,R.string.close);
         toogle.syncState();
-
-
-
-
-        //drawerLayout.closeDrawer(GravityCompat.START);
+        drawerLayout.addDrawerListener(toogle);
 
 
 
@@ -55,7 +47,7 @@ public class TransactionsActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
 
-        Intent intent =new Intent(TransactionsActivity.this,MainActivity.class);
+        Intent intent =new Intent(MonitoringActivity.this,MainActivity.class);
         startActivity(intent);
         finish();
     }
